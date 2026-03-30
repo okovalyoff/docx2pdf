@@ -1,0 +1,15 @@
+# DOCX → PDF Converter Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+tqdm>=4.65.0          # Progress bars
+
+# Windows Word COM support (Windows only)
+# Note: Only needed if using Word COM backend
+pywin32>=305; sys_platform == 'win32'
+
+# Process management
+psutil>=5.9.0         # Process monitoring and killing
+
+# PDF metadata support
+pypdf>=3.0.0          # PDF metadata manipulation
